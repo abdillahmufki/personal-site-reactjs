@@ -2,7 +2,7 @@ import React from "react";
 import img from "../assets/spiderman.jpg";
 const Hero = () => {
   return (
-    <div className="hero min-h-screen bg-white">
+    <div className="hero min-h-screen bg-white flex justify-center">
       <div className="hero-content flex-col lg:flex-row">
         <img src={img} className="max-w-sm rounded-lg shadow-2xl" />
         <div>
