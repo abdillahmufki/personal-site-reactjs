@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <div className="navbar sticky top-0 z-30 w-full px-2 py-4 bg-slate-800 sm:px-4 shadow-xl">
+      <div className="navbar sticky top-0 z-30 w-full px-2 py-4 bg-slate-200 sm:px-4">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -50,7 +50,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="logo">
-            <a href="#">
+            <a href="/">
               <img src={logo} width={60} alt="" />
             </a>
           </div>
@@ -59,11 +59,11 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">
             <Link to="/contact">
               <li>
-                <a>Contact</a>
+                <a className="text-black font-bold text">Contact</a>
               </li>
             </Link>
             <li tabIndex={0}>
-              <a>
+              <a className="text-black font-bold text-md">
                 Parent
                 <svg
                   className="fill-current"
@@ -86,7 +86,7 @@ const Navbar = () => {
             </li>
             <Link to="https://personal-site-abdillahmufki.netlify.app/">
               <li>
-                <a>Portfolio</a>
+                <a className="text-black font-bold text-md">Portfolio</a>
               </li>
             </Link>
           </ul>

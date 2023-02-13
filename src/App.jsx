@@ -10,7 +10,7 @@ export default function App() {
     <>
       <Router>
         <Navbar />
-        <main className="bg-blue-800">
+        <main>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/hero" element={<Hero />} />
