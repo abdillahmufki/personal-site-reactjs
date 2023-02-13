@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <div className="navbar sticky top-0 z-30 w-full px-2 py-4 bg-slate-200 sm:px-4">
+      <div className="navbar sticky top-0 z-30 w-full px-2 py-4 bg-slate-800 sm:px-4">
         <div className="navbar-start">
           <div className="dropdown">
-            <label tabIndex={0} className="btn btn-ghost lg:hidden">
+            <label tabIndex={0} className="btn btn-ghost text-white lg:hidden">
               <ImMenu size={30} />
             </label>
             <ul
@@ -59,11 +59,11 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">
             <Link to="/contact">
               <li>
-                <a className="text-black font-bold text">Contact</a>
+                <a className="text-white font-bold text">Contact</a>
               </li>
             </Link>
             <li tabIndex={0}>
-              <a className="text-black font-bold text-md">
+              <a className="text-white font-bold text-md">
                 Parent
                 <svg
                   className="fill-current"
@@ -75,7 +75,7 @@ const Navbar = () => {
                   <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                 </svg>
               </a>
-              <ul className="p-2 bg-slate-400 text-black">
+              <ul className="p-2 bg-slate-400 text-white">
                 <li>
                   <a>Submenu 1</a>
                 </li>
@@ -86,7 +86,7 @@ const Navbar = () => {
             </li>
             <Link to="https://personal-site-abdillahmufki.netlify.app/">
               <li>
-                <a className="text-black font-bold text-md">Portfolio</a>
+                <a className="text-white font-bold text-md">Portfolio</a>
               </li>
             </Link>
           </ul>
