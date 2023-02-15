@@ -2,7 +2,7 @@ import React from "react";
 
 const Button = (props) => {
   return (
-    <button class="btn btn-outline text-white border-none bg-[#0D3B72]">
+    <button class="btn btn-outline text-white border-none hover:text-white bg-[#0F6292] hover:bg-[#46b96b]">
       {props.text}
     </button>
   );

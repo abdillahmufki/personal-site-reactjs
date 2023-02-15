@@ -11,11 +11,13 @@ export default function App() {
       <Router>
         <Navbar />
         <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/hero" element={<Hero />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
+          <div className="container-2xl">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/hero" element={<Hero />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </div>
         </main>
         <Footer />
       </Router>
