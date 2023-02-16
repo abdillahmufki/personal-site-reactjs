@@ -6,7 +6,7 @@ import Button from "./Button";
 const Navbar = () => {
   return (
     <>
-      <div className="navbar sticky top-0 z-30 w-full px-2 py-4 bg-[#ffffff] sm:px-4">
+      <div className="navbar sticky top-0 z-30 w-full px-2 py-2 bg-[#ffffff] sm:px-4">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost text-black lg:hidden">
