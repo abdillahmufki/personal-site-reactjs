@@ -1,10 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Card from "../components/Card";
-import Button from "../components/Button";
+import { Card, Button } from "../components";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -40,7 +36,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="container bg-slate-400 mx-auto flex justify-center p-3 py-[50px]">
+      <div className="container-2xl bg-slate-400 mx-auto flex justify-center py-[100px]">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12">
           <Card
             image="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"

@@ -1,11 +1,9 @@
+import React from "react";
 import "./index.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Hero from "./pages/Hero";
-import Home from "./pages/Home";
-import Contact from "./pages/Contact";
-export default function App() {
+import { Navbar, Footer } from "./components";
+import { Home, Hero, Contact } from "./pages";
+const App = () => {
   return (
     <>
       <Router>
@@ -23,4 +21,6 @@ export default function App() {
       </Router>
     </>
   );
-}
+};
+
+export default App;

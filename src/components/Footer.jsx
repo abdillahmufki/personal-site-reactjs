@@ -1,6 +1,7 @@
 import React from "react";
 import { BsInstagram, BsTwitter, BsFacebook, BsGithub } from "react-icons/bs";
 import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -10,18 +11,24 @@ const Footer = () => {
         <p>Copyright © 2023 HeroCode - All right reserved</p>
       </div>
       <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-        <a href="#" className="text-2xl">
+        <Link
+          to="https://www.instagram.com/mufkimustache/"
+          className="text-2xl"
+        >
           <BsInstagram />
-        </a>
-        <a className="text-2xl">
+        </Link>
+        <Link to="https://twitter.com/AbdillahMufky" className="text-2xl">
           <BsTwitter />
-        </a>
-        <a className="text-2xl">
+        </Link>
+        <Link
+          to="https://www.facebook.com/abdillah.mufkiauzan/"
+          className="text-2xl"
+        >
           <BsFacebook />
-        </a>
-        <a className="text-2xl">
+        </Link>
+        <Link to="https://github.com/abdillahmufki" className="text-2xl">
           <BsGithub />
-        </a>
+        </Link>
       </div>
     </footer>
   );
