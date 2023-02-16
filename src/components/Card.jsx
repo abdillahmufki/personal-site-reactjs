@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const Card = (props) => {
   return (
-    <div className="card w-[18rem] bg-[#f5f5f5] flex">
+    <div className="card w-[18rem] bg-blue-800 flex">
       <figure>
         <img src={props.image} alt={props.alt} />
       </figure>

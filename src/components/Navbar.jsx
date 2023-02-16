@@ -6,10 +6,10 @@ import Button from "./Button";
 const Navbar = () => {
   return (
     <>
-      <div className="navbar sticky top-0 z-30 w-full px-2 py-4 bg-[#609EA2] sm:px-4">
+      <div className="navbar sticky top-0 z-30 w-full px-2 py-4 bg-[#ffffff] sm:px-4">
         <div className="navbar-start">
           <div className="dropdown">
-            <label tabIndex={0} className="btn btn-ghost text-white lg:hidden">
+            <label tabIndex={0} className="btn btn-ghost text-black lg:hidden">
               <ImMenu size={30} />
             </label>
             <ul
@@ -18,17 +18,17 @@ const Navbar = () => {
             >
               <Link to="/">
                 <li>
-                  <a>Home</a>
+                  <p className="text-black">Home</p>
                 </li>
               </Link>
               <Link to="/contact">
                 <li>
-                  <a>Contact</a>
+                  <p className="text-black">Contact</p>
                 </li>
               </Link>
               <Link to="https://personal-site-abdillahmufki.netlify.app/">
                 <li>
-                  <a>Portfolio</a>
+                  <p className="text-dark">Portfolio</p>
                 </li>
               </Link>
             </ul>
@@ -43,17 +43,17 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">
             <Link to="/">
               <li>
-                <a className="text-white font-bold text">Home</a>
+                <p className="text-black font-bold text">Home</p>
               </li>
             </Link>
             <Link to="/contact">
               <li>
-                <a className="text-white font-bold text">Contact</a>
+                <p className="text-black font-bold text">Contact</p>
               </li>
             </Link>
             <Link to="https://personal-site-abdillahmufki.netlify.app/">
               <li>
-                <a className="text-white font-bold text-md">Portfolio</a>
+                <p className="text-black font-bold text-md">Portfolio</p>
               </li>
             </Link>
           </ul>
