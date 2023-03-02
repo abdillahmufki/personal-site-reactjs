@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Card, Button } from "../components";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import "../index.css";
 
@@ -11,6 +13,9 @@ import "../index.css";
 import { Parallax, Pagination, Navigation } from "swiper";
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <div
@@ -39,6 +44,7 @@ const Home = () => {
       <div className="container-2xl bg-slate-400 mx-auto flex justify-center py-[100px]">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12">
           <Card
+            data-aos="fade-up-right"
             image="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
             alt="image card nature"
             title="Nature"
@@ -46,6 +52,7 @@ const Home = () => {
             btnText="Read More"
           />
           <Card
+            data-aos="flip-left"
             image="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2074&q=80"
             alt="image card nature"
             title="Forest Hill"
@@ -53,6 +60,7 @@ const Home = () => {
             btnText="Read More"
           />
           <Card
+            data-aos="flip-left"
             image="https://images.unsplash.com/photo-1554369525-2965d6ed2c64?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2074&q=80"
             alt="Pinus Forest"
             title="Pinus Forest"
